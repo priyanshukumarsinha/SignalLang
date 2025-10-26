@@ -4,11 +4,17 @@ project(SignalLang)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# include dirs
-include_directories(Tests ErrorHandler)
+# include dirs (headers live in these folders)
+include_directories(
+    ${CMAKE_SOURCE_DIR}/errorHandler
+    ${CMAKE_SOURCE_DIR}/symbolTable
+    ${CMAKE_SOURCE_DIR}/Tests
+)
 
 add_executable(SensorLang
     main.cpp
     Tests/errorHandlerTest.cpp
+    Tests/symbolTableTest.cpp
     errorHandler/errorHandler.cpp
+    symbolTable/symbolTable.cpp     
 )
