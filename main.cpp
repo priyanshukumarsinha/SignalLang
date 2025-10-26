@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
+#include "Tests/errorHandlerTest.h"
 
-int main(){
-    std::cout << "Hello World!\n";
+int main() {
+    ErrorHandlerTest tester;
+    tester.runAll();
     return 0;
 }
