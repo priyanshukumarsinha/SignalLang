@@ -1,0 +1,4 @@
+result = signal1 * 3.14 + temp;
+temp = result / 2.0 - signal1;
+output = temp * temp;
+deadVar = 1.0 * 2.0;

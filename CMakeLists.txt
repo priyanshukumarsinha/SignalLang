@@ -11,6 +11,7 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/Tests
     ${CMAKE_SOURCE_DIR}/lexer
     ${CMAKE_SOURCE_DIR}/parser
+    ${CMAKE_SOURCE_DIR}/tac
 )
 
 add_executable(SensorLang
@@ -20,5 +21,7 @@ add_executable(SensorLang
     errorHandler/errorHandler.cpp
     symbolTable/symbolTable.cpp     
     lexer/lexer.cpp     
-    parser/parser.cpp     
+    parser/parser.cpp   
+    tac/tacGen.cpp
+    tac/dce.cpp
 )
