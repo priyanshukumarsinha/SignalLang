@@ -9,6 +9,8 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/errorHandler
     ${CMAKE_SOURCE_DIR}/symbolTable
     ${CMAKE_SOURCE_DIR}/Tests
+    ${CMAKE_SOURCE_DIR}/lexer
+    ${CMAKE_SOURCE_DIR}/parser
 )
 
 add_executable(SensorLang
@@ -17,4 +19,6 @@ add_executable(SensorLang
     Tests/symbolTableTest.cpp
     errorHandler/errorHandler.cpp
     symbolTable/symbolTable.cpp     
+    lexer/lexer.cpp     
+    parser/parser.cpp     
 )
